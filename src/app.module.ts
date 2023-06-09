@@ -5,7 +5,7 @@ import { SessionService } from './service/player/session.service';
 import { SessionController } from './controller/player/session.controller';
 
 @Module({
-  imports: [MongooseModule.forRoot("mongodb+srv://pbissonho:paulo1234@cluster0.f0puqtd.mongodb.net/?retryWrites=true&w=majority",  {
+  imports: [MongooseModule.forRoot("mongodb+srv://pbissonho:paulo1234@cluster0.f0puqtd.mongodb.net/",  {
   }, ),
   MongooseModule.forFeature([{ name: 'Session', schema: SessionSchema }])],
   
